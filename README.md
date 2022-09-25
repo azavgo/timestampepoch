@@ -4,7 +4,7 @@
 1. Add to Cargo.toml: 
 ```Toml
     [dependencies]
-    uuidv4 = {git = "https://github.com/azavgo/timestampepoch", branch = "main"}
+    timestampepoch = {git = "https://github.com/azavgo/timestampepoch", branch = "main"}
 ```
 2. Generate UNIX timestamp:  
 ```Rust
