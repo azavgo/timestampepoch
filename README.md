@@ -21,6 +21,6 @@
 
     fn main(){
         let date = Date::date_timestamp(89998300800);
-        println!("Date corresponding to the UNIX timestamp 89998300800 is {}", date); 
+        println!("Date corresponding to the UNIX timestamp 89998300800 is {}", date.to_string()); 
     }
 ```
