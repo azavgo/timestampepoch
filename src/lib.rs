@@ -2,7 +2,7 @@
 mod tests;
 
 // Provides date data type, and constructors for the date data type
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq, Copy, Clone)]
 pub struct Date {
     day: usize, 
     month: usize, 
@@ -199,8 +199,6 @@ impl Date {
         let day: usize = 1 + (((timestamp - seconds) as f32) / 86400.0) as usize;
         Self::new(day, month, year)
     }
-
-
 
     pub fn timestamp(self: &Self) -> Option<usize> {
         // Number of seconds in a common year = 31536000 
